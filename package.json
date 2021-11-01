@@ -1,0 +1,24 @@
+{
+  "name": "Readme-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matt-cross23/Readme-generator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matt-cross23/Readme-generator/issues"
+  },
+  "homepage": "https://github.com/matt-cross23/Readme-generator#readme",
+  "dependencies": {
+    "index.js": "0.0.3",
+    "inquirer": "^8.2.0"
+  }
+}
