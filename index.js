@@ -24,20 +24,20 @@ inquirer
     },
   ])
   .then((answers) => {
-    console.log(answers);
+    const readMeContentanswers = generateReadMe(answers);
 
     // TODO: Create a function to write README file
-    fs.writeFile("./README.MD", JSON.stringify(answers), function (err) {
-      if (err) console.log("error");
-    })
+    generateReadMe = ({title, description, table, installation, usage, license, contributing, tests, questions}) =>
+
+    fs.writeFile("./README.MD", generateReadMe, function (err) {
+        const readMeanswers = generateReadMe(answers)
+      
+     err ? console.log("error") : console.log("You've created a Readme!");
+
   })
-  .catch((error) => {
-    if (error.isTtyError) {
-    } else {
-    }
-  });
+});
 // TODO: Create a function to initialize app
-function init() {}
+ function init()
 
 // Function call to initialize app
-init();
+init()
