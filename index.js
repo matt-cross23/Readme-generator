@@ -1,26 +1,26 @@
 // TODO: Include packages needed for this application
 const inquirer = require("inquirer");
 const fs = require("fs")
-
-inquirer
-  .prompt([
+const generateMarkdown = require("./utils/generateMarkdown.js")
+// TODO: Create an array of questions for user input
+const questions = [
     /* Pass your questions in here */
     {
       type: "input",
       message: "What Is The Title Of Your Project?",
-      name: "Project-Title",
+      name: "title",
     },
     {
       type: "input",
       message: "Please Describe Your Project",
       name: "description",
     },
-    {
-      type: "checkbox",
-      message: "Select Options Listed in Your Table of Contents?(Optional)",
-      name: "table",
-      choices['Title', 'Description', 'Installation', "Usage", "License", "Contributions", "Tests", "Questions"]
-    },
+    // {
+    //   type: "checkbox",
+    //   message: "Select Options Listed in Your Table of Contents?(Optional)",
+    //   name: "table",
+    //   choices:['Title', 'Description', 'Installation', "Usage", "License", "Contributions", "Tests", "Questions"]
+    // },
       {
       type: "input",
       message: "How Do You Install Your Project?",
@@ -52,47 +52,23 @@ inquirer
       message: "Enter Ypur Github Username and Email",
       name: "question",
       }
-  ]);
-};
-  // TODO: Create an array of questions for user input
-  // Add Questions to array and use template literals to pull data
-const questions = [${console.log(question)}];
+  ];
 
-  .then((answers) => {
-    const readMeContentanswers = generateReadMe(answers);
 
-    // TODO: Create a function to write README file
-    generateReadMe = ({title, description, table, installation, usage, license, contributing, tests, questions}) =>
-    "#Title 
-     ${title}
-     #Description 
-     ${description} 
-     #Table-of-Contents
-     ${table}
-     #Installation
-     ${installation}
-     #Usage
-     ${usage}
-     #License
-     ${license}
-     #Contributing
-     ${contributing}
-     #Tests
-     ${tests}
-     #Questions
-     ${question}
-     "
-  
-
-    fs.writeFile("./README.MD", generateReadMe, function (err) {
-        const readMeAnswers = generateReadMe(answers)
-      
-     err ? console.log("error") : console.log("You've created a Readme!");
-
-  })
-});
 // TODO: Create a function to initialize app
- function init()
+  function init(){
+    inquirer
+    .prompt(questions)
+    .then((answers) => {
+      const generatedReadMe = generateMarkdown(answers);
+  console.log(generatedReadMe)
+  
+      // TODO: Create a function to write README file
+      fs.writeFile("./dist/README.MD", generatedReadMe, function (err) {
+       err ? console.log("error") : console.log("You've created a Readme!");
+    })
+  });
+  }
 
 // Function call to initialize app
-init()
+ init()
