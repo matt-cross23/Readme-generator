@@ -41,7 +41,7 @@ const questions = [
       type: 'list',
       message: 'Which License/s Would You Like To Use?',
       name: 'license',
-      choices: ['Apache License 2.0', 'BSD 3-Clause "New" or "Revised" license', 'BSD 2-Clause "Simplified" or "FreeBSD" license', 'GNU General Public License (GPL)', 'GNU Library or "Lesser" General Public License (LGPL)', 'MIT license', 'Mozilla Public License 2.0', 'Common Development and Distribution License', 'Eclipse Public License version 2.0']
+      choices: ['Apache License 2.0', 'BSD 3-Clause license', 'BSD 2-Clause license', 'GNU General Public License v3 (GPL)', 'MIT license', 'Mozilla Public License 2.0', 'Eclipse Public License version 1.0']
     },
       {
     type: "input",
