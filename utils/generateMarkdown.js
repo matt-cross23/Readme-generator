@@ -16,7 +16,7 @@ function renderLicenseBadge(license) {
       return "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
     case "Mozilla Public License 2.0":
       return "[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)"
-      case "Eclipse Public License version 1.0"
+      case "Eclipse Public License version 1.0":
       return "[![License](https://img.shields.io/badge/License-EPL_1.0-red.svg)](https://opensource.org/licenses/EPL-1.0)"
     default:
       return ""
@@ -39,7 +39,7 @@ return '(https://opensource.org/licenses/Apache-2.0)'
       return "(https://opensource.org/licenses/MIT)"
     case "Mozilla Public License 2.0":
       return "(https://opensource.org/licenses/MPL-2.0)"
-      case "Eclipse Public License version 1.0"
+      case "Eclipse Public License version 1.0":
       return "(https://opensource.org/licenses/EPL-1.0)"
 default: 
 return ""
@@ -62,7 +62,7 @@ function renderLicenseSection(license) {
       return "License"
     case "Mozilla Public License 2.0":
       return "License"
-      case "Eclipse Public License version 1.0"
+      case "Eclipse Public License version 1.0":
       return "License"
     default:
       return ""

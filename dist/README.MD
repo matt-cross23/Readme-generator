@@ -1,5 +1,5 @@
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-  # **kk**
+  # **Readme Generator**
 
   ## Table Of Contents
 
@@ -14,10 +14,10 @@
 
 
   ## Description
-  df
+  Generate a read me by answer inputs via inquirer
 
   ## Installation
-  
+  n/a
 
   ## Usage
   undefined
@@ -26,13 +26,13 @@
   (https://opensource.org/licenses/Apache-2.0)
 
   ## Contributing
-  12
+  Please don't
 
   ## Tests
-  12
+  n/a
 
   ## Questions
-  This site was built by [12] https://github.com/12 
-  Contact me at: 12
+  This site was built by [matt_cross23] https://github.com/matt_cross23 
+  Contact me at: matthewcross1017@gmail.com
   :grinning:
   
