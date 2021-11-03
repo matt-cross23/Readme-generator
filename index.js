@@ -15,12 +15,18 @@ const questions = [
       message: "Please Describe Your Project",
       name: "description",
     },
-    // {
-    //   type: "checkbox",
-    //   message: "Select Options Listed in Your Table of Contents?(Optional)",
-    //   name: "table",
-    //   choices:['Title', 'Description', 'Installation', "Usage", "License", "Contributions", "Tests", "Questions"]
-    // },
+
+     {
+      type: "checkbox",
+      message: "Please Enter Criteria for Table of Content",
+      name: "table",
+      choices:["Description", 
+      "Installation", 
+      "Usage", 
+      "Contributing", 
+      "Tests", 
+      "Questions"]
+     },
       {
       type: "input",
       message: "How Do You Install Your Project?",
@@ -49,9 +55,14 @@ const questions = [
     },
       {
       type: "input",
-      message: "Enter Ypur Github Username and Email",
+      message: "Enter Your Github Username",
       name: "question",
-      }
+      },
+      {
+        type: "input",
+        message: "Enter Your Email",
+        name: "question2",
+        }
   ];
 
 
